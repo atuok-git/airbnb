@@ -1,13 +1,239 @@
 body {
-    background-color: blue;
 }
 
 a {
     color: #000;
     text-decoration: none;
 }
+
 .container {
-    max-width: 1480px;
+    max-width: 1440px;
     width: 100%;
     margin: 0 auto;
+    position: relative;
+}
+
+.p-header {
+    margin: 0 0 -80px;
+    .container {
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid #000;
+    }
+    &__logo{
+    }
+    &__nav {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        &__list {
+            display: flex;
+            align-items: center;
+            &__item {
+                padding: 0 16px;
+            }
+        }
+        &__head {
+            height: 80px;
+            display: flex;
+            align-items: center;
+
+        }
+        &__body {
+            height: 80px;
+            border: 1px solid #ccc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #fff;
+        }
+        &__search {
+            padding: 0 40px;
+            background: #fff;
+            &__list {
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+    &__action {
+        &__list {
+            display: flex;
+            align-items: center;
+        }
+
+    }
+}
+
+.c-text {
+    &__lv1 {
+        font-size: 56px;
+        font-weight: 700;
+    }
+    &__lv2 {
+        font-size: 48px;
+        font-weight: 700;
+    }
+    &__lv3 {
+        font-size: 24px;
+        font-weight: 700;
+    }
+    &__lv4 {
+        font-size: 18px;
+        font-weight: 700;
+    }
+}
+
+.c-description {
+    &__lv1 {
+        font-size: 28px;
+        font-weight: 400;
+    }
+    &__lv2 {
+        font-size: 20px;
+        font-weight: 400;
+    }
+    &__lv3 {
+        font-size: 16px;
+        font-weight: 400;
+    }
+}
+
+.c-button {
+    color: #fff;
+    height: 48px;
+    font-size: 16px;
+    padding: 0 24px;
+    border-radius: 6px;
+    background: #000;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    &__white {
+        color: #000;
+        background: #eee;
+    }
+    &__small {
+        height: 40px;
+    }
+}
+
+.c-image {
+    width: 100%;
+    background-size: cover;
+    border-radius: 16px;
+    &::before {
+        content: "";
+        display: block;
+        width: 100%;
+        padding-top: 100%;
+    }
+
+}
+
+.p-areaList {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -8px;
+    &__item {
+        display: flex;
+        align-items: center;
+        width: 25%;
+        padding: 8px;
+        &__image {
+            width: 72px;
+            margin: 0 16px 0 0;
+        }
+        &__text {
+
+        }
+    }
+}
+
+.p-cardList {
+    display: flex;
+    margin: -8px;
+    &__item {
+        padding: 8px;
+        flex: 1 1 0%;
+    }
+}
+
+
+.p-home {
+    &__mainVisual {
+        height: 680px;
+        background-color: #eee;
+        background-image: url(../img/mainVisual.jpg);
+        background-size: cover;
+        background-position: center bottom;
+        display: flex;
+        align-items: center;
+        &__text {
+            max-width: 480px;
+            .c-button {
+                margin: 24px 0 0;
+            }
+        }
+    }
+    &__section {
+        margin: 64px 0 0;
+        &__head {
+            margin: 0 0 24px;
+
+        }
+        &__body {
+
+        }
+    }
+}
+
+.p-box {
+    height: 480px;
+    padding: 80px;
+    color: #eee;
+    background: #000;
+    display: flex;
+    align-items: center;
+    &__text {
+        max-width: 480px;
+        .c-button {
+            margin: 32px 0 0;
+        }
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.p-footer {
+    margin: 40px 0 0;
+    padding: 40px 0 0;
+    background: #eee;
+
+    &__body {
+        display: flex;
+    }
+    &__item {
+        width: 25%;
+    }
+    &__foot {
+        border-top: 1px solid #000;
+        margin: 40px 0 0;
+        padding: 24px 0 0;
+    }
 }

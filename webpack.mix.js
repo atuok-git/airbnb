@@ -1,8 +1,8 @@
 const mix = require('laravel-mix');
     
     mix.setResourceRoot('');
-    mix.js('js/index.js', './js/')
-    .autoload({
+    // mix.js('js/index.js', './js/')
+    mix.autoload({
         "jquery": ['$', 'window.jQuery'],
         "vue": ['Vue', 'window.Vue']
     })
